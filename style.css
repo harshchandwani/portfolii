@@ -1,0 +1,543 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+/* INtroduction Section */
+.introduction {
+    background-image: url("asserts/introBackground\ \(1\).jpg");
+    background-color: #cccccc;
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.introductionContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        padding-left: 30px;
+    }
+}
+.heading {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.subHeading {
+    margin-top: 20px;
+}
+
+.socialLinks {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+.socialLogoImage {
+    margin-left: 20px;
+    height: 20px;
+}
+
+/* Introduction Ended */
+
+
+/* About Section */
+.about {
+    height: 750px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.aboutHeading {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+.aboutSubHeading {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 10px;
+}
+
+.aboutInfo {
+    grid-row-start: 4;
+    grid-row-end: 10;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-size: small;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+.profileImage {
+    object-fit: fill;
+}
+
+.profileImagesrc {
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+        grid-column-start: 1;
+    }
+}
+
+.aboutText {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.aboutInfoTextHeading {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.aboutInfoMainHead {
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(48, 48, 95);
+}
+
+.aboutInfoList {
+    list-style: none;
+}
+
+.aboutInfoSubHeading {
+    margin: 10px;
+    font-style: italic;
+}
+
+.aboutInfoListItem {
+    padding: 3%;
+}
+
+.aboutInfoListItemHeading {
+    font-weight: bold;
+}
+
+.personalInfo {
+    padding-bottom: 5%;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* About Section Ended */
+.facts {
+    margin: 40px 0;
+    display: block;
+    padding: 3% 10% 0 10%;
+}
+
+.sectionHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.sectionSubHeading {
+    margin: 20px 0;
+    font-size: small;
+    text-align: center;
+}
+
+.factsInfo {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.factsInfoImagesrc{
+    width: 35px;
+    @media screen and (min-width: 768px) {
+        width: 50px;
+    }
+}
+
+.factsInfoNum {
+    font-size: large;
+    margin: 10px;
+}
+
+.factsInfoName {
+    font-size: smaller;
+}
+
+
+/* Skill Section */
+.skills {
+    padding: 5% 10% 0 10%;
+}
+
+.skillsInfo {
+    font-size: small;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+}
+
+.skill {
+    margin: 30px;
+}
+
+.skillName {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.experienceBar {
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+}
+
+.experience {
+    background-color: rgb(92, 157, 194);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.html {
+    width: 100%;
+}
+
+.css {
+    width: 90%;
+}
+
+.javascript {
+    width: 75%;
+}
+
+.php {
+    width: 80%;
+}
+
+.wordpress {
+    width: 80%;
+}
+
+.photoshop {
+    width: 55%;
+}
+
+/* Section Section Ended */
+
+
+/* Resume Section */
+.resume {
+    padding: 5% 10% 0 10%;
+}
+
+.resumeHeading {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.resumeElementDetails {
+    padding-left: 20px;
+    border-left: solid rgb(70, 70, 188);
+}
+
+.companyName {
+    color: rgb(70, 70, 188);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.companyTenure {
+    margin-bottom: 10px;
+    width: max-content;
+    padding: 5px;
+    background-color: #eae9e9;
+    font-size: small;
+}
+
+.companySummary {
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 10px;
+    opacity: 90%;
+}
+
+.companyInfoList {
+    opacity: 90%;
+    margin-left: 10px;
+    font-size: small;
+}
+
+.companyInfoElement {
+    margin-bottom: 10px;
+
+}
+
+
+.resumeTables {
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Resume Section Ended */
+
+
+/* Portfolio Section */
+.portfolio {
+    padding: 5% 10% 0 10%;
+}
+
+.photoSection {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+
+    @media screen and (min-width: 768px) {
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+.photos {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagesforporfolio {
+    margin-bottom: 10px;
+}
+
+.rightPhotoSection {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+/* Portfolio Section Ended000 */
+/* Services Section */
+.services {
+    padding: 5% 10% 0 10%;
+}
+
+.servicesContainer {
+    background-color: #f6f6f6;
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+.serviceName {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    background-color: white;
+    padding: 50px;
+    font-size: small;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Services Section Ended */
+
+
+/* Testimonial Section */
+
+/* Testimonial Section Ended */
+
+/* Contact Section */
+.contact {
+    padding: 5% 10% 0 10%;
+    font-size: x-small;
+}
+
+.mainContainer {
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.preInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        flex-direction: column;
+    }
+}
+
+.preInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        ;
+    }
+
+}
+
+.preInfoImage {
+    height: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 10px;
+    }
+}
+
+.formContainer {
+    margin-bottom: 10px;
+}
+
+.contactForm {
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+}
+
+.contactInput::placeholder {
+    font-size: x-small;
+}
+
+.name {
+    width: 46%;
+    margin-right: 1%;
+}
+
+.email {
+    width: 46%;
+}
+
+.subject {
+    width: 95%;
+}
+
+.message {
+    width: 95%;
+    height: 150px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.sendMessage {
+    color: white;
+    background-color: rgb(74, 74, 167);
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.sendMessage:hover {
+    background-color: rgb(55, 55, 128);
+}
+
+/* Contact Section Ended */
+/* Footer Section */
+.footer {
+    padding: 5% 10% 5% 10%;
+    background-color: #eae9e9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerHeading {
+    font-weight: 900;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+.footerSubHeading {
+    font-size: x-small;
+}
+
+.copyright {
+    font-size: x-small;
+}
+
+.myResume {
+    font-weight: 600;
+}
+
+
+.socialLinksforFooter {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+/* Footer Section Ended */
