@@ -7,7 +7,7 @@
 
 /* INtroduction Section */
 .introduction {
-    background-image: url("asserts/introBackground\ \(1\).jpg");
+    background-image: url("asserts/hero-bg.jpg");
     background-color: #cccccc;
     height: 750px;
     background-position: center;
@@ -78,6 +78,7 @@
     display: flex;
     grid-gap: 10px;
     font-size: small;
+
     @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -85,10 +86,12 @@
     }
 
 }
-.profileImage{
+
+.profileImage {
     display: flex;
     justify-content: center;
 }
+
 .profileImagesrc {
     width: 40vh;
     height: 100%;
@@ -100,6 +103,11 @@
         height: 40vh;
         width: 30vh;
     }
+}
+
+.profileImagesrc:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 
@@ -129,6 +137,12 @@
 .personalInfo {
     padding-bottom: 5%;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: 786px) {
+        flex-direction: row;
+    }
 }
 
 /* About Section Ended */
@@ -158,6 +172,11 @@
     display: flex;
     text-align: center;
     justify-content: space-around;
+}
+
+.factsInfoItem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .factsInfoImagesrc {
@@ -308,19 +327,23 @@
 
 /* Portfolio Section */
 .portfolio {
-    padding: 5% 10% 0 10%;
+    padding: 5% 10% 0 5%;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 10%;
+    }
 }
 
 .photoSection {
     margin-top: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 
     @media screen and (min-width: 768px) {
-
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -330,13 +353,27 @@
 }
 
 .imagesforporfolio {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 40vh;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+
+        width: 50vh;
+    }
 }
 
+
 .rightPhotoSection {
-    @media screen and (max-width: 768px) {
-        display: none;
+    @media screen and (min-width: 950px) {
+        display: hidden;
     }
+}
+
+.imagesforporfolio:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 /* Portfolio Section Ended000 */
@@ -371,6 +408,14 @@
     font-size: small;
     text-align: center;
     border-radius: 20px;
+    border: 3px solid transparent;
+    /* Add a transparent border */
+}
+
+.container:hover {
+    transform: scale(1.1);
+    border-color: rgb(74, 74, 167);
+    transition: 0.5s;
 }
 
 /* Services Section Ended */
@@ -383,7 +428,7 @@
 /* Contact Section */
 .contact {
     padding: 5% 10% 0 10%;
-    font-size: x-small;
+    font-size: small;
 }
 
 .mainContainer {
@@ -417,7 +462,6 @@
         flex-direction: row;
         justify-content: left;
         text-align: left;
-        ;
     }
 
 }
@@ -444,7 +488,7 @@
 }
 
 .contactInput::placeholder {
-    font-size: x-small;
+    font-size: small;
 }
 
 .name {
