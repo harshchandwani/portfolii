@@ -24,10 +24,12 @@
     width: 70%;
     justify-content: center;
     align-items: center;
+
     @media screen and (max-width: 768px) {
         padding-left: 30px;
     }
 }
+
 .heading {
     font-size: xx-large;
     font-weight: 700;
@@ -53,16 +55,12 @@
 
 /* About Section */
 .about {
-    height: 750px;
-    display: grid;
-    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    flex-direction: column;
     padding: 0 10%;
-    overflow: hidden;
 }
 
 .aboutHeading {
-    grid-row-start: 1;
-    grid-row-end: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,51 +71,37 @@
 }
 
 .aboutSubHeading {
-    grid-row-start: 3;
-    grid-row-end: 4;
     margin: 10px;
 }
 
 .aboutInfo {
-    grid-row-start: 4;
-    grid-row-end: 10;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     grid-gap: 10px;
     font-size: small;
-
     @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
 }
-
-.profileImage {
-    object-fit: fill;
+.profileImage{
+    display: flex;
+    justify-content: center;
 }
-
 .profileImagesrc {
-    grid-row-start: 4;
-    grid-row-end: 10;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 100%;
+    width: 40vh;
     height: 100%;
+    /* @media screen and (max-width: 950px) {
+        height: 70%;
+    } */
 
     @media screen and (max-width: 768px) {
-        grid-column-start: 1;
+        height: 40vh;
+        width: 30vh;
     }
 }
 
-.aboutText {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.aboutInfoTextHeading {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
 
 .aboutInfoMainHead {
     font-size: x-large;
@@ -144,20 +128,13 @@
 
 .personalInfo {
     padding-bottom: 5%;
-    grid-row-start: 5;
-    grid-row-end: 8;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    display: flex;
 }
 
 /* About Section Ended */
 .facts {
+
     margin: 40px 0;
-    display: block;
     padding: 3% 10% 0 10%;
 }
 
@@ -183,8 +160,9 @@
     justify-content: space-around;
 }
 
-.factsInfoImagesrc{
+.factsInfoImagesrc {
     width: 35px;
+
     @media screen and (min-width: 768px) {
         width: 50px;
     }
