@@ -178,6 +178,10 @@
     display: flex;
     text-align: center;
     justify-content: space-around;
+
+    @media screen and (max-width: 768px) {
+        font-size: smaller;
+    }
 }
 
 .factsInfoItem:hover {
@@ -506,6 +510,7 @@
     align-items: center;
     text-align: center;
     font-size: smaller;
+
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: left;
